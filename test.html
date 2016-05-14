@@ -1,0 +1,23 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script>
+			sloths = [];
+			$.getJSON("sloths.json")
+			.done(function(data){
+				console.log("finished");
+				sloths = data;
+				
+				$.each(sloths, function(index, val){
+					$('body').append("<p><b>" + index + ":</b> "+ val.title + "<br/><img src='" + val.image_url + "'/></p>");	
+				});
+			});
+
+			
+
+		</script>
+	</body>
+</html>
