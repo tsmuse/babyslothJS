@@ -12,7 +12,7 @@ $yellow: #F7E967;
 $yellow-green: #A9CF54;
 $green: #588F27;
 
-
+$tablet-viewport: 768px;
 //== Susy grid setup
 
 $susy: (
@@ -52,7 +52,11 @@ h1{
 	line-height:3.75rem;
 	color:$teal;
 	margin:0 0 1rem 0;
-
+	@include breakpoint($tablet-viewport){
+		font-size: 7rem;
+		line-height: 6rem;
+		margin: 0 0 2.5rem 0;
+	}
 }
 
 .image-area{
@@ -109,6 +113,17 @@ h1{
 	}
 	& p.copyright a{
 		font-size:0.8rem;
+	}
+	@include breakpoint($tablet-viewport){
+		& p{
+			font-size: 1.5rem;
+		}
+		& p.copyright{
+			font-size: 1rem;
+		}
+		& p.copyright a{
+			font-size: 1rem;
+		}
 	}
 
 }
