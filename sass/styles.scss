@@ -23,7 +23,7 @@ $susy: (
 	output: float,
 	gutter-position: inside,
 	global-box-sizing: border-box,
-	container: 1400px,
+	container: 1200px,
 	container-position: center,
 	);
 
@@ -111,7 +111,7 @@ h1{
 	width:span(10);
 	margin: 0 auto 0 auto;
 	& p{
-		margin-bottom:0.5rem;
+		margin:0 auto 0.5rem auto;
 	}
 	& p.copyright{
 		font-size:0.8rem;
@@ -126,6 +126,7 @@ h1{
 		max-width: 750px;
 		& p{
 			font-size: 1.3rem;
+			max-width:672px;
 		}
 		& p.copyright{
 			font-size: 1rem;
