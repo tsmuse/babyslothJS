@@ -2,6 +2,16 @@
 
 @import "susy";
 @import "breakpoint";
+@import "normalize";
+
+
+//== colors
+$teal: #04BFBF;
+$mint: #CAFCD8;
+$yellow: #F7E967;
+$yellow-green: #A9CF54;
+$green: #588F27;
+
 
 //== Susy grid setup
 
@@ -17,3 +27,65 @@ $susy: (
 #container{
 	@include container;
 }
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color:lighten($mint,10%);
+	font-family: "proxima-nova", sans-serif;
+}
+
+h1{
+	width:span(full);
+	font-size:4rem;
+	text-align: center;
+	line-height:3.75rem;
+	color:$teal;
+
+}
+
+.image-area{
+	background-color:$mint;
+	width:span(11);
+	margin: 0 auto 0 auto;
+	padding: 1rem 1rem 2rem 1rem;
+	& img{
+		width:span(full);
+	}
+}
+
+.credits-area{
+	width:span(11);
+	margin: 0 auto 0 auto;
+	background-color:$yellow;
+	& p{
+		padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+	}
+
+}
+.control-area{
+	width:span(8);
+	margin: 0 auto 3rem auto;
+}
+.sloth-button{
+	width:span(full);
+	padding:1rem 0 1rem 0;
+	height: 3rem;
+	display:inline-block;
+	background-color:$teal;
+	text-align:center;
+}
+
+.about-area{
+	width:span(10);
+	margin: 0 auto 0 auto;
+	font-size: 1.2rem;
+
+}
+.copyright{
+	font-size:0.8rem;
+	text-align:center;
+}
+
