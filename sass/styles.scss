@@ -37,12 +37,21 @@ body{
 	font-family: "proxima-nova", sans-serif;
 }
 
+a{
+	text-decoration:none;
+	font-variant: small-caps;
+	color:darken($mint,30%);
+	font-size: 1.3rem;
+	border-bottom: 1px dotted $teal;
+}
+
 h1{
 	width:span(full);
 	font-size:4rem;
 	text-align: center;
 	line-height:3.75rem;
 	color:$teal;
+	margin:0 0 1rem 0;
 
 }
 
@@ -50,7 +59,8 @@ h1{
 	background-color:$mint;
 	width:span(11);
 	margin: 0 auto 0 auto;
-	padding: 1rem 1rem 2rem 1rem;
+	padding: 1rem 1rem 1.5rem 1rem;
+	overflow: hidden;
 	& img{
 		width:span(full);
 	}
@@ -58,10 +68,12 @@ h1{
 
 .credits-area{
 	width:span(11);
-	margin: 0 auto 0 auto;
-	background-color:$yellow;
+	margin: 0 auto 2rem auto;
+	//background-color:lighten($yellow,15%);
+
 	& p{
 		padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+		border-bottom: 0.5rem solid lighten($yellow,15%);
 	}
 
 }
@@ -72,20 +84,33 @@ h1{
 .sloth-button{
 	width:span(full);
 	padding:1rem 0 1rem 0;
-	height: 3rem;
+	height: 3.5rem;
 	display:inline-block;
 	background-color:$teal;
 	text-align:center;
+	vertical-align:middle;
+	font-variant: normal;
+	border-radius: 2px;
+	box-shadow: 0px 5px 1px $mint;
+	color:lighten($yellow,15%);
+
 }
 
 .about-area{
 	width:span(10);
 	margin: 0 auto 0 auto;
-	font-size: 1.2rem;
+	& p{
+		margin-bottom:0.5rem;
+	}
+	& p.copyright{
+		font-size:0.8rem;
+		text-align:center;
+		padding-top:1rem;	
+	}
+	& p.copyright a{
+		font-size:0.8rem;
+	}
 
 }
-.copyright{
-	font-size:0.8rem;
-	text-align:center;
-}
+
 
