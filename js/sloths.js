@@ -1,6 +1,6 @@
 // grab sloths.json, parse JSON, select a sloth for initial load.
 sloths = [];
-slothpen = "sloths.json";
+slothpen = "http://tsmuse.github.io/babysloths/sloths.json";
 $.getJSON(slothpen)
 .done(function(data){
 	console.log("finished");
